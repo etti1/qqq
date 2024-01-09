@@ -1,0 +1,201 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #343b4d;
+    overflow: hidden;
+}
+
+
+    @font-face {
+        font-family: 'Roboto-Bold';
+        src: url('assets/fonts/Roboto-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Roboto-Regular';
+        src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    }
+
+    .form-container {
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+
+    .text-content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-left: 70px;
+    }
+
+    h1 {
+        color: rgb(6, 13, 47);
+        font-family: "Roboto-Bold", serif;
+        font-size: 57px;
+        padding-top: 40px;
+    }
+
+    p {
+        color: rgb(6, 13, 47);
+        font-family: "Roboto-Regular", serif;
+        font-size: 16px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: -70px;
+        color: rgb(6, 13, 47);
+        font-family: "Roboto-Regular", serif;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+
+    li img {
+        margin-right: 10px;
+    }
+
+    .form-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+
+    .input-container {
+        margin-top: 10px;
+    }
+
+    input[type="email"] {
+        width: 90%;
+        padding: 17px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .label-placeholder {
+        color: rgb(6, 13, 47);
+        font-family: "Roboto-Bold", serif;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 15px;
+        font-family: "Roboto-Bold", serif;
+        padding: 17px;
+        background-color: rgb(21, 29, 70);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        font-family: "Roboto-Bold", serif;
+        padding: 17px;
+        background-color: rgb(21, 29, 70);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 15px;
+        transition: background-color 0.3s ease 0.1s;
+    }
+
+    button:hover,
+    button:active {
+        background-color: rgb(255, 105, 97);
+    }
+
+
+    .error-message {
+        color: rgb(255, 105, 97);
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: right;
+        display: none;
+        position: absolute;
+        right: 52%;
+        top: 61%;
+
+    }
+
+    .error-message.active {
+        display: flex;
+    }
+
+    .error-message.error-text {
+        color: rgb(255, 105, 97);
+    }
+
+@media screen and (min-width: 701px) {
+    .image-mobile {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+    html, body {
+        overflow: hidden;
+    }
+
+    body {
+        overflow: hidden !important;;
+    }
+    .image-desktop {
+        display: none;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 30px;
+        overflow: hidden;
+    }
+    .image-mobile {
+        overflow: hidden;
+    }
+    img {
+        overflow: hidden;
+        width: auto;
+        margin-left: auto;
+    }
+    ul {
+        overflow: hidden;
+        margin-left: -5px;
+    }
+    li {
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .form-container {
+        flex-direction: column-reverse;
+    }
+    .text-content {
+        padding-left: 0;
+        margin: 11px;
+    }
+}
